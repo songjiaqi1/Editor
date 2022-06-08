@@ -31,7 +31,7 @@ class InlineElementUtils {
   }
 
   insertLink = (elementData) => {
-    this.editor.exec({ type: 'insert_link_at_selection', elementData });
+    this.editor.exec({ type: 'insert_link', elementData });
   }
 
   setLink = (elementData) => {
@@ -39,7 +39,7 @@ class InlineElementUtils {
   }
 
   insertImage = (data) => {
-    this.editor.exec({type: 'insert_image_at_selection', data: {src: data.url}, at: data.selection});
+    this.editor.exec({type: 'insert_image', data: {src: data.url}, at: data.selection});
   }
 
   adjustImageSize(options) {

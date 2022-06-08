@@ -14,7 +14,7 @@ const withInline = (editor) => {
     const data = command.data;
     let { selection } = editor;
     switch (command.type) {
-    case 'insert_link_at_selection':
+    case 'insert_link':
       selection = command.elementData.selection;
       const isCollapsed = selection && Range.isCollapsed(selection);
       const link = generateLinkElement({
@@ -47,7 +47,7 @@ const withInline = (editor) => {
       linkPath.pop();
       Editor.insertNodes(editor, newNodeLink, {at: linkPath});
       break;
-    case 'insert_image_at_selection':
+    case 'insert_image':
       const img = generateImageElement({data: command.data});
       Editor.insertNodes(editor, img, {at: command.at});
       break;
