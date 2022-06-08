@@ -1,0 +1,138 @@
+.seafile-ed-image {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.seafile-ed-image .seafile-ed-image-inResizing {
+  box-shadow: 0 0 0 2px #007bff;
+}
+.seafile-ed-image .image-resizer {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -5px;
+  bottom:  -5px;
+  transform: ();
+  background-color: #007bff;
+  border: 1px solid #fff;
+  cursor: se-resize;
+}
+.image-size {
+  display: inline-block;
+  padding: 5px;
+  height: 22px;
+  position: absolute;
+  bottom: -25px;
+  left: 100%;
+  transform: translateX(5px);
+  border-radius: 3px;
+  line-height: 12px;
+  color: #fff;
+  background-color: #4c4c4c;
+  font-size: 12px;
+}
+
+.seafile-ed-image .image-full-button {
+  position: absolute;
+  height: 26px;
+  display: inline-block;
+  width: 26px;
+  top: 0;
+  right: -32px;
+  text-align: center;
+  line-height: 20px;
+  padding: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  border: 1px solid rgba(0, 40, 100, 0.12);
+  background-color: #fff;
+  user-select: none!important;
+  z-index: 1000;
+}
+
+.seafile-ed-image-viwer:hover .image-full-button {
+  display: inline-block;
+}
+
+.seafile-ed-image-viwer .image-full-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.image-full-button:hover{
+  display: block;
+  background-color: #efefef;
+}
+
+.image-tooltip {
+  display: none;
+  position: absolute;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  bottom: -10px;
+  transform: translate(-50%, 100%);
+  background: #fff;
+  padding: 2px;
+  border-radius: 2px;
+  white-space:nowrap;
+}
+
+.image-tooltip::before{
+  position: absolute;
+  content: '';
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  transform: rotate(45deg);
+  border-width: 5px;
+  border-style: solid;
+  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.1);
+  border-color:#fff transparent transparent #fff;
+}
+
+.image-full-button:hover .image-tooltip {
+  display: inline;
+}
+
+/* set button font style in image previewer */
+.sf-editor-image-previewer .dtable-icon-left {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sf-editor-image-previewer .dtable-icon-left:before {
+  content: "\e756";
+}
+
+.sf-editor-image-previewer .dtable-icon-right {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+.sf-editor-image-previewer .dtable-icon-right:before {
+  content: "\e755";
+}
+
+.sf-editor-image-previewer button.dtable-icon-fork-number {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+.sf-editor-image-previewer .dtable-icon-fork-number:before {
+  content: "\e6ce";
+}

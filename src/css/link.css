@@ -1,0 +1,7 @@
+.article .virtual-link {
+  color: #eb8205;
+}
+
+.article .virtual-link:hover {
+  text-decoration: underline;
+}
