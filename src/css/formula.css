@@ -1,0 +1,19 @@
+.selected-formula {
+  outline: 2px solid #007bff;
+}
+
+.block-formula {
+  display: block;
+  user-select: none;
+}
+
+.MathJax {
+  margin: 0;
+}
+
+.formula-preview {
+  padding: 10px;
+  border: 2px dashed #ebebeb;
+  min-height: 40px;
+  overflow-x: auto;
+}

@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { SimpleEditor } from './editor/editor';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Editor extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: props.value || '',
+    }
+  }
+
+  refEditor = (editor) => {
+    console.log(editor);
+  }
+
+  onSave = (value) => {
+    console.log(value);
+  }
+
+  render() {
+    return (
+      <SimpleEditor
+        readOnly={false}
+        refEditor={this.refEditor}
+        onSave={this.onSave}
+        value={'wwwww'}
+      />
+    );
+  }
 }
 
-export default App;
+export default Editor;

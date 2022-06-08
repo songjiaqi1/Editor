@@ -1,0 +1,57 @@
+
+.article td {
+  position: relative;
+}
+
+.article .selected-cell {
+  caret-color: transparent;
+  background-color: #fff4e6;
+}
+
+.article .selected-cell-top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -1px;
+  border-top: 1px double #ffa94d;
+  z-index: 2;
+}
+
+.article .selected-cell-bottom:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: -1px;
+  border-bottom: 1px double #ffa94d;
+  z-index: 2;
+}
+
+.article .selected-cell-left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -1px;
+  border-left: 1px double #ffa94d;
+  z-index: 2;
+}
+
+.article .selected-cell-right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: -1px;
+  border-right: 1px double #ffa94d;
+  z-index: 2;
+}

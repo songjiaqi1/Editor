@@ -1,0 +1,47 @@
+.seafile-ed-hovermenu {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid rgba(0, 40, 100, 0.12);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  top: -3000px;
+  right: -3000px;
+  z-index: 1000;
+}
+.seafile-ed-hovermenu .seafile-ed-hovermenu-triangle {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background: #fff;
+  border-right: 1px solid rgba(0, 40, 100, 0.12);
+  border-bottom: 1px solid rgba(0, 40, 100, 0.12);
+  position: absolute;
+  top: 34px;
+  right: 50%;
+  z-index: 1001;
+}
+.seafile-ed-hovermenu .seafile-ed-hovermenu-link {
+  height: 38px;
+  max-width: 170px;
+  padding: 6px 12px;
+  display: inline-block;
+  line-height: 28px;
+  overflow: hidden;
+}
+.seafile-ed-hovermenu .seafile-ed-hovermenu-btn {
+  background-color: #fff;
+  width: 35px;
+  font-weight: normal;
+  color: #999999;
+  line-height: 26px;
+  font-size: 16px;
+}
+.seafile-ed-hovermenu .seafile-ed-hovermenu-btn, .seafile-ed-hovermenu .seafile-ed-hovermenu-btn:focus {
+  border: 0;
+  box-shadow: 0;
+}
+.seafile-ed-hovermenu-mouseclick {
+  background-color: #ddd;
+}
