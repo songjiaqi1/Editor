@@ -1,5 +1,5 @@
 {
-  "name": "simple-editor",
+  "name": "wysiwyg-md-editor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
