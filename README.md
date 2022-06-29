@@ -1,5 +1,5 @@
 # Editor
-This is a WYSIWYG markdown editor based on commands.
+This is a WYSIWYG markdown editor using commands.
 The editor is based on slate.
 
 ## Start
